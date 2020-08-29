@@ -9,11 +9,11 @@ class Dep {
   }
 
   notify() {
-    this.deps.forEach(dep => dep())
+    this.deps.forEach(dep => dep());
   }
 
   remove() {
-    isRemovingDependency.forEach(dep => this.deps.delete(dep))
+    isRemovingDependency.forEach(dep => this.deps.delete(dep));
   }
 }
 
@@ -53,9 +53,9 @@ const listen = (whatToListenTo, whatToDo) => {
 
 // add reaction
 const addReactionOnStateChange = options => {
-  const {reaction, state, property} = options;
+  const { reaction, state, property } = options;
   if (Array.isArray(reaction)) {
-    listen(() => state[property], reaction)
+    listen(() => state[property], reaction);
   } else {
     listen(() => state[property], [reaction]);
   }
@@ -63,17 +63,17 @@ const addReactionOnStateChange = options => {
 
 // unlisten
 let isRemovingDependency = false;
-const unlisten = (whatToUnlistenFrom, whatToUnlisten) => {
+const unlisten = (whatToUnlistenTo, whatToUnlisten) => {
   isRemovingDependency = whatToUnlisten;
-  whatToUnlistenFrom();
+  whatToUnlistenTo();
   isRemovingDependency = false;
 };
 
 // remove reaction
 const removeReaction = options => {
-  const {reaction, state, property} = options;
+  const { reaction, state, property } = options;
   if (Array.isArray(reaction)) {
-    unlisten(() => state[property], reaction)
+    unlisten(() => state[property], reaction);
   } else {
     unlisten(() => state[property], [reaction]);
   }
