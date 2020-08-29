@@ -4,7 +4,7 @@ const {
   removeReaction
 } = require('../observe');
 
-// SIMPLE EXAMPLE
+// SIMPLE EXAMPLE OF REACTIVE STATE
 
 // initialize state
 const state = {};
