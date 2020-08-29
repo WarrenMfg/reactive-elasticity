@@ -81,8 +81,5 @@ const removeReaction = options => {
 
 module.exports = {
   observe,
-  listen,
-  addReactionOnStateChange,
-  unlisten,
-  removeReaction
+  addReactionOnStateChange
 };

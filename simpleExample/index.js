@@ -2,7 +2,7 @@ const {
   observe,
   addReactionOnStateChange,
   removeReaction
-} = require('./observe');
+} = require('../observe');
 
 // SIMPLE EXAMPLE
 
