@@ -25,7 +25,7 @@ console.log(Object.keys(state).forEach(key => console.log(key, state[key])));
 /*
 
 RESULT:
-Reduce expenses by a total of $10,000 and lower the price to the maximum that the middleLow target market tier is willing to buy
+Reduce expenses by a total of $10,000 and lower the price to the maximum that the middleLow target market tier is willing to pay
 and profit will increase from $197,000 to $977,090 -- a difference of $780,090 which is nearly a 500% increase.
 
 */
