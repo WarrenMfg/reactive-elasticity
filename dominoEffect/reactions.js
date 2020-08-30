@@ -9,9 +9,9 @@ const {
 
 // REACTIONS
 module.exports = () => {
-  // if taxes change, recalculate revenue
+  // if taxes change, recalculate profit
   addReactionOnStateChange({
-    reaction: calculateRevenueAndUpdateState,
+    reaction: calculateProfitAndUpdateState,
     state,
     property: 'tax'
   });

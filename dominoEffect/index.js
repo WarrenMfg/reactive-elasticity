@@ -15,10 +15,10 @@ console.log(Object.keys(state).forEach(key => console.log(key, state[key])));
 state.processing = 15000;
 // and if marketing can be reduced by $5,000 from $15,000 to $10,000
 state.marketing = 10000;
-// then these changes will yield a $20 price
+// then these changes will yield a $5 decrease to the price, from $25 to $20
 console.log(Object.keys(state).forEach(key => console.log(key, state[key])));
 
-// but if we lower the price to $19.99, then we can reach the middleLow market and increase unitSales, and thus increase profit
+// but if we lower the price to $19.99, then we can reach the middleLow market and increase unitSales, thus increasing profit
 state.price = 19.99;
 console.log(Object.keys(state).forEach(key => console.log(key, state[key])));
 

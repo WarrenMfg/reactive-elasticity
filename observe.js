@@ -1,4 +1,4 @@
-// dep
+// define dependency system
 class Dep {
   constructor() {
     this.deps = new Set();
@@ -17,7 +17,7 @@ class Dep {
   }
 }
 
-// observe
+// define observation system
 const observe = obj => {
   Object.keys(obj).forEach(key => {
     let state = obj[key];
